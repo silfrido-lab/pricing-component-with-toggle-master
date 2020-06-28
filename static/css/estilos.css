@@ -1,0 +1,106 @@
+.main-card {
+  background: white;
+  text-align: center;
+  padding: 1.8em;
+  border-radius: 10px;
+}
+.main-card-title {
+  margin-top: 0;
+}
+.main-card .main-cost {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4em;
+  margin: 0;
+  color: var(--darkGrayishBlue);
+}
+.main-card .main-cost span {
+  font-size: 0.5em;
+  margin-right: 0.1em;
+}
+.main-card .button {
+  width: 100%;
+  padding: 1.2em;
+  border-radius: 5px;
+  border: none;
+  background-image: linear-gradient(to right, #a3a8f0 0%, #696fdd 100%);
+  margin-top: 1em;
+  letter-spacing: 2px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  font-weight: 700;
+}
+.main-card ul {
+  padding: 0;
+}
+.main-card ul li {
+  list-style: none;
+  padding: 1em 0;
+  border-bottom: 1px solid var(--lightGrayishBlue);
+  color: var(--grayishBlue);
+}
+.main-card ul li:first-child {
+  border-top: 1px solid var(--lightGrayishBlue);
+}
+
+.color {
+  color: white;
+  background-image: linear-gradient(to right, #a3a8f0 0%, #696fdd 100%);
+}
+.color .color-p {
+  color: white;
+}
+.color .color-buttom {
+  background: white;
+  color: #696fdd;
+  font-weight: bold;
+}
+.color ul li {
+  color: white;
+}
+
+:root {
+  --linearGradient: rgb(163, 168, 240) to rgb(105, 111, 221);
+  --veryLightGrayishBlue: rgb(246, 246, 254);
+  --lightGrayishBlue: rgb(179, 181, 198);
+  --grayishBlue: rgb(109, 112, 141);
+  --darkGrayishBlue: rgb(73, 76, 95);
+}
+
+body {
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  background: var(--veryLightGrayishBlue);
+}
+
+.main-container {
+  text-align: center;
+}
+.main-container .main-grid {
+  display: grid;
+  grid-row-gap: 2em;
+  padding: 5em 0;
+}
+
+.wrapper {
+  padding: 0 1.5em;
+}
+
+#is-active {
+  display: none;
+}
+
+.anually {
+  padding-top: 4em;
+}
+.anually-h1 {
+  padding-bottom: 1.5em;
+  margin: 0;
+  color: var(--grayishBlue);
+}
+
+/*# sourceMappingURL=estilos.css.map */

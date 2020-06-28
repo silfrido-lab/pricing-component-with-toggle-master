@@ -1,0 +1,43 @@
+@import "cards.scss";
+:root {
+    --linearGradient: rgb(163, 168, 240) to rgb(105, 111, 221);
+    //### Neutral
+    --veryLightGrayishBlue: rgb(246, 246, 254);
+    --lightGrayishBlue: rgb(179, 181, 198);
+    --grayishBlue: rgb(109, 112, 141);
+    --darkGrayishBlue: rgb(73, 76, 95);
+}
+
+body {
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    background: var(--veryLightGrayishBlue);
+}
+
+.main-container {
+    text-align: center;
+    .main-grid {
+        display: grid;
+        grid-row-gap: 2em;
+        padding: 5em 0;
+    }
+}
+
+.wrapper {
+    padding: 0 1.5em;
+}
+
+#is-active {
+    display: none;
+}
+
+.anually {
+    padding-top: 4em;
+    &-h1 {
+        padding-bottom: 1.5em;
+        margin: 0;
+        color: var(--grayishBlue);
+    }
+}
