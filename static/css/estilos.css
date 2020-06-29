@@ -116,4 +116,32 @@ body {
   color: var(--grayishBlue);
 }
 
+.switch {
+  display: inline-block;
+  height: 30px;
+  width: 60px;
+  border-radius: 40px;
+  border: 1px solid red;
+  background: red;
+  cursor: pointer;
+  user-select: none;
+}
+
+.switch::before {
+  content: "";
+  display: block;
+  width: 25px;
+  height: 25px;
+  background-color: white;
+  border-radius: 50%;
+  transform: translateX(30px);
+  transition: 0.3s;
+  will-change: transform;
+  margin: 2px 2px;
+}
+
+.checkbox:checked ~ .switch::before {
+  transform: translateX(0);
+}
+
 /*# sourceMappingURL=estilos.css.map */

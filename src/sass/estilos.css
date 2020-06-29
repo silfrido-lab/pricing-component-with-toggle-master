@@ -139,4 +139,38 @@ body {
   margin: 0;
   color: var(--grayishBlue);
 }
+
+.switch {
+  display: inline-block;
+  height: 30px;
+  width: 60px;
+  border-radius: 40px;
+  border: 1px solid red;
+  background: red;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.switch::before {
+  content: "";
+  display: block;
+  width: 25px;
+  height: 25px;
+  background-color: white;
+  border-radius: 50%;
+  -webkit-transform: translateX(30px);
+          transform: translateX(30px);
+  -webkit-transition: .3s;
+  transition: .3s;
+  will-change: transform;
+  margin: 2px 2px;
+}
+
+.checkbox:checked ~ .switch::before {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
 /*# sourceMappingURL=estilos.css.map */
