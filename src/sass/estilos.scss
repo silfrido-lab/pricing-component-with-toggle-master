@@ -13,11 +13,16 @@ body {
     font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
     margin: 0;
-    background: var(--veryLightGrayishBlue);
+    background-color: var(--veryLightGrayishBlue);
 }
 
 .main-container {
     text-align: center;
+    background-image: url(../../images/bg-top.svg);
+    background-repeat: no-repeat;
+    background-position-y: -20px;
+    background-position-x: 210px;
+    background-size: 340px;
     .main-grid {
         display: grid;
         grid-row-gap: 2em;

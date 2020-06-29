@@ -6,11 +6,16 @@
     &-title {
         margin-top: 0;
     }
+    .main-title {
+        margin-top: 0;
+        font-size: 1.2em;
+        color: var(--grayishBlue);
+    }
     .main-cost {
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 4em;
+        font-size: 4.8em;
         margin: 0;
         color: var(--darkGrayishBlue);
         span {
@@ -55,6 +60,9 @@
         background: white;
         color: rgb(105, 111, 221);
         font-weight: bold;
+    }
+    .color-title {
+        color: white;
     }
     ul {
         li {
