@@ -13,16 +13,22 @@
   color: var(--grayishBlue);
 }
 .main-card .main-cost {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 4.8em;
   margin: 0;
   color: var(--darkGrayishBlue);
 }
 .main-card .main-cost span {
-  font-size: 0.5em;
+  font-size: 4.8em;
   margin-right: 0.1em;
+}
+.main-card .main-cost .mensual {
+  display: none;
+}
+.main-card .toggle .annually {
+  border: 1px solid red;
+  display: none;
+}
+.main-card .toggle .mensual {
+  display: block;
 }
 .main-card .button {
   width: 100%;
@@ -121,8 +127,7 @@ body {
   height: 30px;
   width: 60px;
   border-radius: 40px;
-  border: 1px solid red;
-  background: red;
+  background-image: linear-gradient(to right, #a3a8f0 0%, #696fdd 100%);
   cursor: pointer;
   user-select: none;
 }
@@ -138,10 +143,25 @@ body {
   transition: 0.3s;
   will-change: transform;
   margin: 2px 2px;
+  user-select: none;
 }
 
 .checkbox:checked ~ .switch::before {
   transform: translateX(0);
+  user-select: none;
+}
+
+.button-switch {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.button-switch span {
+  color: var(--lightGrayishBlue);
+}
+
+input {
+  display: none;
 }
 
 /*# sourceMappingURL=estilos%20css.map */

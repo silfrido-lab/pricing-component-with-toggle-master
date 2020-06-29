@@ -52,8 +52,7 @@ body {
     height: 30px;
     width: 60px;
     border-radius: 40px;
-    border: 1px solid red;
-    background: red;
+    background-image: linear-gradient(to right, rgb(163, 168, 240) 0%, rgb(105, 111, 221) 100%);
     cursor: pointer;
     user-select: none;
 }
@@ -69,10 +68,24 @@ body {
     transition: .3s;
     will-change: transform;
     margin: 2px 2px;
+    user-select: none;
 }
 
+// .checkbox {
+//     display: none;
+// }
 .checkbox:checked~.switch::before {
     transform: translateX(0);
+    user-select: none;
+}
+
+.button-switch {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    span {
+        color: var( --lightGrayishBlue);
+    }
 }
 
 // content: "";
@@ -84,3 +97,6 @@ body {
 // transform: translateX(40px);
 // transition: .3s;
 // will-change: transform;
+input {
+    display: none;
+}

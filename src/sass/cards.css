@@ -16,23 +16,26 @@
 }
 
 .main-card .main-cost {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 4.8em;
   margin: 0;
   color: var(--darkGrayishBlue);
 }
 
 .main-card .main-cost span {
-  font-size: .5em;
+  font-size: 4.8em;
   margin-right: .1em;
+}
+
+.main-card .main-cost .mensual {
+  display: none;
+}
+
+.main-card .toggle .annually {
+  border: 1px solid red;
+  display: none;
+}
+
+.main-card .toggle .mensual {
+  display: block;
 }
 
 .main-card .button {
