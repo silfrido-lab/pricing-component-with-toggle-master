@@ -3,6 +3,7 @@
   text-align: center;
   padding: 1.8em;
   border-radius: 10px;
+  border: 1px solid red;
 }
 
 .main-card-title {
@@ -21,21 +22,7 @@
 }
 
 .main-card .main-cost span {
-  font-size: 4.8em;
-  margin-right: .1em;
-}
-
-.main-card .main-cost .mensual {
-  display: none;
-}
-
-.main-card .toggle .annually {
-  border: 1px solid red;
-  display: none;
-}
-
-.main-card .toggle .mensual {
-  display: block;
+  font-size: 4em;
 }
 
 .main-card .button {
@@ -66,6 +53,30 @@
 
 .main-card ul li:first-child {
   border-top: 1px solid var(--lightGrayishBlue);
+}
+
+.main-card #bmensual,
+.main-card #pmensual,
+.main-card #mmensual {
+  display: block;
+}
+
+.main-card #banual,
+.main-card #panual,
+.main-card #manual {
+  display: none;
+}
+
+.main-card #bmensual.active,
+.main-card #pmensual.active,
+.main-card #mmensual.active {
+  display: none;
+}
+
+.main-card #banual.active,
+.main-card #panual.active,
+.main-card #manual.active {
+  display: block;
 }
 
 .color {
@@ -125,12 +136,23 @@ body {
   padding: 5em 0;
 }
 
-.wrapper {
-  padding: 0 1.5em;
+@media screen and (min-width: 1024px) {
+  .main-container .main-grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 336px 336px 336px;
+        grid-template-columns: 336px 336px 336px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
-#is-active {
-  display: none;
+.wrapper {
+  padding: 0 1.5em;
 }
 
 .anually {

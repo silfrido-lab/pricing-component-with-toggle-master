@@ -27,15 +27,17 @@ body {
         display: grid;
         grid-row-gap: 2em;
         padding: 5em 0;
+        @media screen and (min-width: 1024px) {
+            display: grid;
+            grid-template-columns: 336px 336px 336px;
+            justify-content: center;
+            align-items: center;
+        }
     }
 }
 
 .wrapper {
     padding: 0 1.5em;
-}
-
-#is-active {
-    display: none;
 }
 
 .anually {
@@ -71,9 +73,6 @@ body {
     user-select: none;
 }
 
-// .checkbox {
-//     display: none;
-// }
 .checkbox:checked~.switch::before {
     transform: translateX(0);
     user-select: none;
@@ -88,15 +87,6 @@ body {
     }
 }
 
-// content: "";
-// display: block;
-// width: 30px;
-// height: 30px;
-// background: var(--switchSpinner);
-// border-radius: 50%;
-// transform: translateX(40px);
-// transition: .3s;
-// will-change: transform;
 input {
     display: none;
 }
