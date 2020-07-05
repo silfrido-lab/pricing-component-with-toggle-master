@@ -3,39 +3,36 @@
   text-align: center;
   padding: 1.8em;
   border-radius: 10px;
-  -webkit-box-shadow: 0 0 5px -2px #696fdd;
   box-shadow: 0 0 5px -2px #696fdd;
 }
-
 .main-card-title {
   margin-top: 0;
 }
-
 .main-card .main-title {
-  margin-top: 0;
+  margin-top: 1.3em;
   font-size: 1.2em;
   color: var(--grayishBlue);
 }
-
 .main-card .main-cost {
   margin: 0;
   color: var(--darkGrayishBlue);
 }
-
 .main-card .main-cost span {
   font-size: 4em;
 }
-
 .main-card .main-cost span small {
   font-size: 0.5em;
 }
-
+@media screen and (min-width: 1024px) {
+  .main-card .main-cost span {
+    font-size: 5em;
+  }
+}
 .main-card .button {
   width: 100%;
   padding: 1.2em;
   border-radius: 5px;
   border: none;
-  background-image: -webkit-gradient(linear, left top, right top, from(#a3a8f0), to(#696fdd));
   background-image: linear-gradient(to right, #a3a8f0 0%, #696fdd 100%);
   margin-top: 1em;
   letter-spacing: 2px;
@@ -44,82 +41,57 @@
   font-size: 0.8em;
   font-weight: 700;
   outline: none;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-
 .main-card .button:hover {
   background-color: white;
   background-image: none;
   border: 1px solid #696fdd;
   color: #696fdd;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-
 .main-card ul {
   padding: 0;
 }
-
 .main-card ul li {
   list-style: none;
   padding: 1em 0;
   border-bottom: 1px solid var(--lightGrayishBlue);
   color: var(--grayishBlue);
 }
-
 .main-card ul li:first-child {
   border-top: 1px solid var(--lightGrayishBlue);
 }
-
 .main-card #bmensual,
 .main-card #pmensual,
 .main-card #mmensual {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
-
 .main-card #banual,
 .main-card #panual,
 .main-card #manual {
   display: none;
 }
-
 .main-card #bmensual.active,
 .main-card #pmensual.active,
 .main-card #mmensual.active {
   display: none;
 }
-
 .main-card #banual.active,
 .main-card #panual.active,
 .main-card #manual.active {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
 .color {
-  -webkit-box-shadow: 0 0 5px -2px #696fdd;
   box-shadow: 0 0 5px -2px #696fdd;
   color: white;
-  background-image: -webkit-gradient(linear, left top, right top, from(#a3a8f0), to(#696fdd));
   background-image: linear-gradient(to right, #a3a8f0 0%, #696fdd 100%);
 }
-
 @media screen and (min-width: 1024px) {
   .color {
     padding: 3em 2em;
@@ -128,45 +100,38 @@
 .color span {
   color: white;
 }
-
 .color .color-buttom {
   background: white;
   color: #696fdd;
   font-weight: bold;
   outline: none;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-
 .color .color-buttom:hover {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   background-color: transparent;
   border: 1px solid white;
   color: white;
   box-sizing: border-box;
 }
-
 .color .color-title {
   color: white;
 }
-
 .color ul li {
   color: white;
 }
 
 :root {
   --linearGradient: rgb(163, 168, 240) to rgb(105, 111, 221);
-  --veryLightGrayishBlue:rgb(246, 246, 254);
-  --lightGrayishBlue:rgb(179, 181, 198);
-  --grayishBlue:rgb(109, 112, 141);
-  --darkGrayishBlue:rgb(73, 76, 95);
+  --veryLightGrayishBlue: rgb(246, 246, 254);
+  --lightGrayishBlue: rgb(179, 181, 198);
+  --grayishBlue: rgb(109, 112, 141);
+  --darkGrayishBlue: rgb(73, 76, 95);
 }
 
 body {
   font-size: 15px;
   font-family: "Montserrat", sans-serif;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0;
   background-color: var(--veryLightGrayishBlue);
@@ -180,7 +145,6 @@ body {
   background-position-x: 210px;
   background-size: 340px;
 }
-
 @media screen and (min-width: 1024px) {
   .main-container {
     background-image: url(../../images/bg-top.svg);
@@ -192,26 +156,19 @@ body {
   }
 }
 .main-container .main-grid {
-  display: -ms-grid;
   display: grid;
   grid-row-gap: 2em;
   padding: 5em 0;
 }
-
 @media screen and (min-width: 1024px) {
   .main-container .main-grid {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 336px 336px 336px;
     grid-template-columns: 336px 336px 336px;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
   }
 }
+
 .wrapper {
   padding: 0 1.5em;
 }
@@ -219,7 +176,6 @@ body {
 .anually {
   padding-top: 4em;
 }
-
 .anually-h1 {
   padding-bottom: 1.5em;
   margin: 0;
@@ -231,12 +187,8 @@ body {
   height: 30px;
   width: 60px;
   border-radius: 40px;
-  background-image: -webkit-gradient(linear, left top, right top, from(#a3a8f0), to(#696fdd));
   background-image: linear-gradient(to right, #a3a8f0 0%, #696fdd 100%);
   cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
 
@@ -247,47 +199,29 @@ body {
   height: 25px;
   background-color: white;
   border-radius: 50%;
-  -webkit-transform: translateX(30px);
   transform: translateX(30px);
-  -webkit-transition: 0.3s;
   transition: 0.3s;
   will-change: transform;
   margin: 2px 2px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
 
 .checkbox:checked ~ .switch::before {
-  -webkit-transform: translateX(0);
   transform: translateX(0);
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
 
 .button-switch {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
-
 .button-switch span {
   color: var(--lightGrayishBlue);
 }
-
 .button-switch .anual {
   padding-right: 2em;
 }
-
 .button-switch .mensual {
   padding-left: 2em;
 }
@@ -295,7 +229,5 @@ body {
 input {
   display: none;
 }
-
-/*# sourceMappingURL=estilos.css.map */
 
 /*# sourceMappingURL=estilos.css.map */
