@@ -23,6 +23,14 @@ body {
     background-position-y: -20px;
     background-position-x: 210px;
     background-size: 340px;
+    @media screen and (min-width: 1024px) {
+        background-image: url(../../images/bg-top.svg);
+        background-repeat: no-repeat;
+        background-position-y: -15px;
+        background-position-x: right;
+        position: relative;
+        background-size: 340px;
+    }
     .main-grid {
         display: grid;
         grid-row-gap: 2em;
@@ -80,10 +88,16 @@ body {
 
 .button-switch {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     span {
         color: var( --lightGrayishBlue);
+    }
+    .anual {
+        padding-right: 2em;
+    }
+    .mensual {
+        padding-left: 2em;
     }
 }
 

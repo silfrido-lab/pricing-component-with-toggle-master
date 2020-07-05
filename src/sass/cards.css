@@ -3,6 +3,8 @@
   text-align: center;
   padding: 1.8em;
   border-radius: 10px;
+  -webkit-box-shadow: 0 0 5px -2px #696fdd;
+          box-shadow: 0 0 5px -2px #696fdd;
 }
 
 .main-card-title {
@@ -24,6 +26,10 @@
   font-size: 4em;
 }
 
+.main-card .main-cost span small {
+  font-size: 0.5em;
+}
+
 .main-card .button {
   width: 100%;
   padding: 1.2em;
@@ -37,6 +43,18 @@
   text-transform: uppercase;
   font-size: .8em;
   font-weight: 700;
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main-card .button:hover {
+  background-color: white;
+  background-image: none;
+  border: 1px solid #696fdd;
+  color: #696fdd;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .main-card ul {
@@ -57,7 +75,15 @@
 .main-card #bmensual,
 .main-card #pmensual,
 .main-card #mmensual {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .main-card #banual,
@@ -75,16 +101,32 @@
 .main-card #banual.active,
 .main-card #panual.active,
 .main-card #manual.active {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .color {
+  -webkit-box-shadow: 0 0 5px -2px #696fdd;
+          box-shadow: 0 0 5px -2px #696fdd;
   color: white;
   background-image: -webkit-gradient(linear, left top, right top, from(#a3a8f0), to(#696fdd));
   background-image: linear-gradient(to right, #a3a8f0 0%, #696fdd 100%);
 }
 
-.color .color-p {
+@media screen and (min-width: 1024px) {
+  .color {
+    padding: 3em 2em;
+  }
+}
+
+.color span {
   color: white;
 }
 
@@ -92,6 +134,18 @@
   background: white;
   color: #696fdd;
   font-weight: bold;
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.color .color-buttom:hover {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  box-sizing: border-box;
 }
 
 .color .color-title {

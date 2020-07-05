@@ -3,6 +3,7 @@
     text-align: center;
     padding: 1.8em;
     border-radius: 10px;
+    box-shadow: 0 0 5px -2px #696fdd;
     &-title {
         margin-top: 0;
     }
@@ -16,11 +17,10 @@
         color: var(--darkGrayishBlue);
         span {
             font-size: 4em;
+            small {
+                font-size: 0.5em;
+            }
         }
-        // .anual-u {
-        //     font-size: 1em;
-        //     border: 1px solid blue;
-        // }
     }
     .button {
         width: 100%;
@@ -34,6 +34,15 @@
         text-transform: uppercase;
         font-size: .8em;
         font-weight: 700;
+        outline: none;
+        box-sizing: border-box;
+    }
+    .button:hover {
+        background-color: white;
+        background-image: none;
+        border: 1px solid rgb(105, 111, 221);
+        color: rgb(105, 111, 221);
+        box-sizing: border-box;
     }
     ul {
         padding: 0;
@@ -50,7 +59,9 @@
     #bmensual,
     #pmensual,
     #mmensual {
-        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     #banual,
     #panual,
@@ -65,20 +76,36 @@
     #banual.active,
     #panual.active,
     #manual.active {
-        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 
 .color {
+    box-shadow: 0 0 5px -2px #696fdd;
     color: white;
     background-image: linear-gradient(to right, rgb(163, 168, 240) 0%, rgb(105, 111, 221) 100%);
-    .color-p {
+    @media screen and(min-width: 1024px) {
+        padding: 3em 2em;
+    }
+    span {
         color: white;
     }
     .color-buttom {
         background: white;
         color: rgb(105, 111, 221);
         font-weight: bold;
+        outline: none;
+        box-sizing: border-box;
+    }
+    .color-buttom:hover {
+        box-sizing: border-box;
+        background-color: transparent;
+        border: 1px solid white;
+        color: white;
+        box-sizing: border-box;
+        // #696fdd;
     }
     .color-title {
         color: white;
